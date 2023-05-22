@@ -1,0 +1,358 @@
+<!doctype html>
+
+<html>
+	<head>
+		<style>
+
+			#container{
+				width:1980px;
+				height: 750px;
+
+				margin-left:0px;
+				margin-right:0px;
+				margin-top:0px;
+				margin-bottom:0px;
+
+				padding-left:0px;
+				padding-right:0px;
+				padding-top:0px;
+				padding-bottom:0px;
+
+				border-width:0px;
+				border-color:white;
+				border-style:solid;
+			}
+
+			#topPanel{
+				width:980px;
+				height:150px;
+
+				margin-left:0px;
+				margin-right:0px;
+				margin-top:0px;
+				margin-bottom:0px;
+
+				padding-left:0px;
+				padding-right:0px;
+				padding-top:0px;
+				padding-bottom:0px;
+
+				border-width:10px;
+				border-color:red;
+				border-style:solid;
+			}
+
+			#linksPanel{
+				width:980px;
+				height:75px;
+
+				margin-left:0px;
+				margin-right:0px;
+				margin-top:0px;
+				margin-bottom:0px;
+
+				padding-left:0px;
+				padding-right:0px;
+				padding-top:0px;
+				padding-bottom:0px;
+
+				border-width:10px;
+				border-color:blue;
+				border-style:solid;
+			}
+
+			#sidePanel{
+				width:170px;
+				height:150px;
+
+				margin-left:10px;
+				margin-right:10px;
+				margin-top:40px;
+				margin-bottom:40px;
+
+				padding-left:10px;
+				padding-right:10px;
+				padding-top:10px;
+				padding-bottom:10px;
+
+				border-width:5px;
+				border-color:green;
+				border-style:solid;
+
+				float:left;
+			}
+
+			#middlePanel{
+				width:470px;
+				height:150px;
+
+				margin-left:30px;
+				margin-right:30px;
+				margin-top:40px;
+				margin-bottom:40px;
+
+				padding-left:10px;
+				padding-right:10px;
+				padding-top:10px;
+				padding-bottom:10px;
+
+				border-width:5px;
+				border-color:yellow;
+				background-color:yellow;
+				border-style:solid;
+
+				float:left;
+
+				overflow:auto;
+			}
+
+
+			#commentsPanel{
+				width:170px;
+				height:150px;
+
+                margin-left:30px;
+				margin-right:30px;
+				margin-top:40px;
+				margin-bottom:40px;
+
+				padding-left:10px;
+				padding-right:10px;
+				padding-top:10px;
+				padding-bottom:10px;
+
+				border-width:0px;
+				border-color:purple;
+				border-style:solid;
+
+				box-shadow: black 10px 10px 3px;
+				background-color:pink;
+
+				transform:rotate(-10deg);
+
+				float:left;
+			}
+
+			#bottomPanel{
+				width:980px;
+				height:75px;
+
+                margin-left:0px;
+				margin-right:0px;
+				margin-top:0px;
+				margin-bottom:0px;
+
+				padding-left:1px;
+				padding-right:0px;
+				padding-top:0px;
+				padding-bottom:0px;
+
+				border-width:10px;
+				border-color:magenta;
+				border-style:solid;
+
+				float:left;
+				clear:left;
+			}
+
+			#Mypict
+			{
+				/* transform:scale(3); */ /* increases size by 3x*/
+				/* transform:scale(0.5); */ /* decreases size by 0.5x */
+
+				transform:translate(20px,30px);
+			}
+
+			#personal
+			{
+				background-color:coral;
+			}
+
+			#personal label
+			{
+				float:left;
+				color:white;
+				font-weight:900;
+			}
+
+			#personal input
+			{
+				display:block;
+			}
+
+			#personal legend
+			{
+				font-family:arial;
+				font-size:1em;
+				font-weight:900;
+			}
+
+			#employer
+			{
+				background-color:springgreen;
+			}
+
+			#employer label
+			{
+				float:left;
+				color:gray;
+				font-weight:900;
+			}
+
+			#employer input
+			{
+				display:block;
+			}
+
+			#employer legend
+			{
+				font-family:arial;
+				font-size:1em;
+				font-weight:900;
+			}
+
+			#PoliticalAffiliations
+			{
+				background-color:red;
+			}
+
+			#PoliticalAffiliations legend
+			{
+				font-family:arial;
+				font-size:1em;
+				font-weight:900;
+			}
+
+			#Heroes
+			{
+				background-color:aqua;
+			}
+
+			#Heroes legend
+			{
+				font-family:arial;
+				font-size:1em;
+				font-weight:900;
+				color:red;
+			}
+
+			#Heroes label
+			{
+				float:left;
+			}
+
+		</style>
+	<head>
+
+	<body>
+		<div id="container">
+
+			<div id="topPanel">
+			</div>
+
+			<div id="linksPanel">
+			</div>
+
+			<div id="sidePanel">
+				<img src="tiger.jpg" id="Mypict" width="50">
+			</div>
+
+			<div id="middlePanel">
+
+				<form action="" id="myform1" method="get">
+					<fieldset id="personal">
+						<legend>Personal Info</legend>
+
+						<label for="nameBox">Enter name: </label>
+						<input id="nameBox" type="text">
+
+						<label for="addressBox">Enter your address: </label>
+						<input id="addressBox" type="text">
+					</fieldset>
+
+					<fieldset id="employer">
+						<legend>Employment info</legend>
+
+						<label for="employerBox">Who is your employer? </label>
+						<input id="employerBox" type="text">
+
+						<label for="salaryBox">What is your salary? </label>
+						<input id="salaryBox" type="text">
+					</fieldset>
+
+					<fieldset id="otherControls1">
+						<legend>Favorite Controls</legend>
+
+						<label for="Comments">Enter your comments: </label>
+						<textarea id="Comments" rows="5" colks="15">Put comments here</textarea>
+					</fieldset>
+
+					<fieldset id="PoliticalAffiliations">
+						<legend>Poltical Parties</legend>
+
+						<label for="pi">Democrat</label>
+						<input type="radio" name="polit1" id="p1">
+						<label for="pi">Republican</label>
+						<input type="radio" name="polit1" id="p2">
+						<label for="pi">Independent</label>
+						<input type="radio" name="polit1" id="p3">
+
+						<br />
+						<label for="rating">Was your service good?</label>
+						<input type="checkbox" id="rating">
+					</fieldset>
+
+					<fieldset id="Heroes">
+						<legend>My Heroes</legend>
+
+						<label for="MyHeroes">Choose your hero:</label>
+						<select id="MyHeroes">
+							<option value="CA">Captain America</option>
+							<option value="IM">Iron Man</option>
+							<option value="HK">Hulk</option>
+						</select>
+
+						<br />
+
+						<label for="moviesWatched">How many movies did you watch?</label>
+						<input type="number" id="moviesWatched">
+
+						<br />
+
+						<label for="ColorOfShoe">Please choose a color: </label>
+						<input type="color" name="ColorOfShoe">
+
+						<br />
+
+						<label for="ratingsPicker">Rate the last Marvel movie: </label>
+						<input type="range" id="ratingsPicker">
+
+						<br />
+						<label for="datePicker">When did you see the movie?</label>
+						<input type="date" id="datePicker">
+					</fieldset>
+
+
+
+					<input type="submit"  value="Hey press here when done">
+					<input type="reset" value="Let's do over">
+					<input type="button" value="Click me, but I will do nothing"> <!-- put a generic button on the screen -->
+				</form>
+			</div>
+
+			<div id="commentsPanel">
+				<blockquote><i>Amazing 5 starts</i></blockquote>
+			</div>
+
+			<div id="bottomPanel">
+			</div>
+
+
+
+
+		</div> <!--end of the container-->
+
+	</body>
+
+
+</html>
